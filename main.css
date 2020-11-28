@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'montserrat', sans-serif;
+    background-image: url("Images/Sunny.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    background-position: top center;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3));
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input{
+    width:100%;
+    max-width: 750px;
+    padding:20px;
+    border: transparent;
+    outline: none;
+    background-color: rgba(225,225,225,0.6);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: darkgreen;
+    columns: #331133;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    transition: 0.2s ease-out;
+}
+
+header input:focus{
+    background-color: rgbe(225,225,225,0.6);
+}
+
+main{
+    padding:25px 25px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:50px auto;
+    width:50vh;
+    background-color: rgba(225, 225, 225, 0.4);
+}
+
+.location .city{
+    color: #000000;
+    font-size:50px;
+    font-weight:600;
+    margin-bottom: 5px;
+
+}
+
+.location .date{
+    color: #000000;
+    font-size:30px;
+    font-weight:500;
+    
+}
+
+.current .temp{
+    color:#000000;
+    font-size: 102px;
+    font-weight: 900;
+    margin:30px 0px;
+    text-shadow: 2px 8pxrgba(0,0,0,0.6);
+}
+
+.current .temp span{
+    font-weight: 500;   
+}
+.current .weather{
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 15px;
+    text-shadow:0px 3px rgba(0,0,0,0.4);
+}
+
+.current .hi-low{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0px 4px #ffffff;
+}
